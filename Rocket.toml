@@ -1,0 +1,2 @@
+[development.databases]
+postgres = { url = "postgres://db_user:password@localhost/todo" }

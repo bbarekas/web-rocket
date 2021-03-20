@@ -6,5 +6,17 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+
 [dependencies]
-rocket = "0.4.6"
+rocket = "0.4.5"
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+serde = {version = "1.0", features = ["derive"]}
+diesel = { version = "1.4.4", features = ["postgres"] }
+bcrypt = "0.8"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+
+
+[dependencies.rocket_contrib]
+version = "0.4"
+default-features = false
+features = ["json", "diesel_postgres_pool"]
