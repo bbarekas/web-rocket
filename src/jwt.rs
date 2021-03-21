@@ -20,6 +20,7 @@ pub enum ApiKeyError {
 ///
 /// # Attributes
 /// * user_id (i32): the ID of a user
+#[derive(Debug)]
 pub struct JwtToken {
     pub user_id: i32,
     pub body: String,

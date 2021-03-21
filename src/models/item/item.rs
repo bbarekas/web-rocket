@@ -1,7 +1,7 @@
 use crate::schema::to_do;
 use super::super::user::user::User;
 
-#[derive(Queryable, Identifiable, Associations)]
+#[derive(Queryable, Identifiable, Associations, Debug)]
 #[belongs_to(User)]
 #[table_name="to_do"]
 pub struct Item {
